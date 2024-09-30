@@ -114,4 +114,4 @@ text_content = extract_information_from_headlines(filtered_headlines)
 
 for text in text_content:
     print(text)
-    print('-' * 150)
+    print('-' * 100)
