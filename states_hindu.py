@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-base_url = 'https://www.thehindu.com/news/national/telangana'
+base_url = 'https://www.thehindu.com/news/national/'
 
 def extract_headlines_from_page(url):
     response = requests.get(url)

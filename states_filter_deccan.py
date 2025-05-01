@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-base_url = 'https://www.deccanchronicle.com/southern-states/telangana'
+base_url = 'https://www.deccanchronicle.com/rest-of-india'
 
 def extract_headlines_from_page(url):
     response = requests.get(url)
@@ -100,7 +100,7 @@ def extract_information_from_headlines(headlines):
 num_pages_to_scrape = 10
 headlines_data = extract_headlines_from_multiple_pages(num_pages_to_scrape)
 
-keywords_list = ['BJP', 'Warangal']
+keywords_list = ['woman', 'women', 'congress']
 
 filtered_headlines = filter_headlines_by_keywords(headlines_data, keywords_list)
 
